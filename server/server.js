@@ -43,7 +43,7 @@ app.use("/store", storeRoutes);
 
 // Start server
 
-app.listen(3005, () => {
+app.listen(3005, '0.0.0.0', () => {
   console.log("Server open on port 3005");
 });
 
