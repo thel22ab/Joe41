@@ -34,7 +34,7 @@ function getCookie(name) {
 
 function checkout() {
   axios
-    .post("http://localhost:3000/store/checkout", { bag: document.cookie })
+    .post("http://localhost:3005/store/checkout", { bag: document.cookie })
     .then(function (response) {})
     .catch(function (error) {});
 }

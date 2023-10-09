@@ -8,7 +8,7 @@ function login() {
   };
 
   axios
-    .post("http://localhost:3000/customer/login", user)
+    .post("http://localhost:3005/customer/login", user)
     .then(function (response) {
       location.href = "/chat";
     })

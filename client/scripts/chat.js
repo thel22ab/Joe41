@@ -18,7 +18,7 @@ function sendChat() {
 
 function getChat (){
   axios
-    .get("http://localhost:3000/customer/chatlog")
+    .get("http://localhost:3005/customer/chatlog")
     .then(function (response) {
       response.data.forEach((msg) => {
         const item = document.createElement("li");
